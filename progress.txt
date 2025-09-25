@@ -1,1 +1,3 @@
-[2025-09-25 13:05:12] Addded a timestamp to my python code
+[2025-09-25 13:34:21] Finally added a menu
+[2025-09-25 13:34:53] Understood else, elif if else and other conditions
+[2025-09-25 13:35:17] I will now be using this simple program I created to track my progress
