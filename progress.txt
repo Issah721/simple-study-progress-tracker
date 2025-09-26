@@ -7,3 +7,4 @@
 [2025-09-26 06:55:49] Learnt ow to search for files and directories, usd dirb, dirsearh, dirbuster
 [2025-09-26 07:15:47] Learnt about command injections and words to look for in various framework technologies
 [2025-09-26 08:35:00] used a sleepr operator and sql map, it can exploit even most complex injections
+[2025-09-26 08:43:28] understood post requests and watched sql injection using burpsuite
