@@ -4,3 +4,6 @@
 [2025-09-26 05:56:30] I have started learning loops and sequences[] today.
 [2025-09-26 06:07:45] Revised on functions and its syntax, I have created multiple functions i.e view_progress, main(), add_progress_entry
 [2025-09-26 06:20:52] Started a course on Udemy on web security and bug bounty basics
+[2025-09-26 06:55:49] Learnt ow to search for files and directories, usd dirb, dirsearh, dirbuster
+[2025-09-26 07:15:47] Learnt about command injections and words to look for in various framework technologies
+[2025-09-26 08:35:00] used a sleepr operator and sql map, it can exploit even most complex injections
