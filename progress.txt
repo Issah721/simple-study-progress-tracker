@@ -1,3 +1,6 @@
 [2025-09-25 13:34:21] Finally added a menu
 [2025-09-25 13:34:53] Understood else, elif if else and other conditions
 [2025-09-25 13:35:17] I will now be using this simple program I created to track my progress
+[2025-09-26 05:56:30] I have started learning loops and sequences[] today.
+[2025-09-26 06:07:45] Revised on functions and its syntax, I have created multiple functions i.e view_progress, main(), add_progress_entry
+[2025-09-26 06:20:52] Started a course on Udemy on web security and bug bounty basics
