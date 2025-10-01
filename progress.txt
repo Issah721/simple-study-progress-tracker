@@ -10,3 +10,5 @@
 [2025-09-26 08:43:28] understood post requests and watched sql injection using burpsuite
 [2025-09-27 22:45:38] Started the Mastercard cybersecurity virtual internship
 [2025-09-27 23:22:27] Completed the virtual internship
+[2025-10-01 07:35:50] Learnt about Burpsuite, I can now intercept https requests, modify and forwad them
+[2025-10-01 07:37:25] Installed parrot os in a vm ware, I know how to use burpsuite to search for web vulns
