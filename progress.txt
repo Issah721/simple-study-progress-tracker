@@ -12,3 +12,4 @@
 [2025-09-27 23:22:27] Completed the virtual internship
 [2025-10-01 07:35:50] Learnt about Burpsuite, I can now intercept https requests, modify and forwad them
 [2025-10-01 07:37:25] Installed parrot os in a vm ware, I know how to use burpsuite to search for web vulns
+[2025-10-03 08:56:50] Finished my web vulnerabilities course on Udemy, Openede a bugcrowd account
