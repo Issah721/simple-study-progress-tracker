@@ -93,5 +93,15 @@
         "timestamp": "2025-10-05 22:09:56",
         "category": "Security",
         "log": "Used subfinder to find subdomains and nikto for finding intresting files in scope for a Anytask bug bounty"
+    },
+    {
+        "timestamp": "2025-10-05 22:19:46",
+        "category": "Python",
+        "log": "Migrated progress to json and deleted the migration code."
+    },
+    {
+        "timestamp": "2025-10-05 22:20:28",
+        "category": "Python",
+        "log": "Maintained my code and removed unused code"
     }
 ]

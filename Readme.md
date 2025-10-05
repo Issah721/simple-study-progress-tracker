@@ -4,9 +4,9 @@ This is a simple command-line application built with Python to help track person
 
 ## Features
 
-* Add new progress entries with an automatic timestamp.
+* Add new progress entries with an automatic timestamp and a category.
 * View all previously logged progress entries.
-* All entries are saved to a local text file (`progress.txt`).
+* All entries are saved in a structured format to a local JSON file (`progress.json`).
 
 ## Project Evolution
 
