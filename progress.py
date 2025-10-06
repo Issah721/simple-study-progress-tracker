@@ -1,19 +1,36 @@
 #This python program will track my progress
 from datetime import datetime
 import json
+from typing import List, Dict, Any, Optional
+
+Entry = Dict[str, str]
+Entries = List[Entry]
 
 class ProgressTracker:
     """A class to track progress by logging entries to a file."""
 
-    def __init__(self, filename="progress.json"):
+    def __init__(self, filename: str = "progress.json"):
         """Initializes the ProgressTracker with a filename."""
         self.filename = filename
 
-    def add_progress_entry(self):
+    def _read_entries(self) -> Entries:
+        """Reads entries from the JSON file."""
+        try:
+            with open(self.filename, "r") as file:
+                entries: Entries = json.load(file)
+                return entries
+        except (FileNotFoundError, json.JSONDecodeError):
+            return []
+
+    def _write_entries(self, entries: Entries) -> None:
+        """Writes entries to the JSON file."""
+        with open(self.filename, "w") as file:
+            json.dump(entries, file, indent=4)
+
+    def add_progress_entry(self) -> None:
         """Gets user input and appends it with a timestamp to the progress file."""
         while True:
             progress_log = input("Enter your progress for today: ")
-            # Ensure the input is not empty or just whitespace
             if progress_log.strip():
                 break
             print("Progress log cannot be empty. Please try again.")
@@ -24,7 +41,6 @@ class ProgressTracker:
                 break
             print("Category cannot be empty. Please try again.")
 
-        # Get the current timestamp and format it
         now = datetime.now()
         timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
         
@@ -35,36 +51,24 @@ class ProgressTracker:
         }
 
         print("Logging your progress...")
-        try:
-            with open(self.filename, "r") as file:
-                entries = json.load(file)
-        except (FileNotFoundError, json.JSONDecodeError):
-            entries = []
-        
+        entries = self._read_entries()
         entries.append(new_entry)
-
-        with open(self.filename, "w") as file:
-            json.dump(entries, file, indent=4)
+        self._write_entries(entries)
 
         print("Progress logged successfully!")
 
-    def view_progress(self):
+    def view_progress(self) -> None:
         """Reads and prints all entries from the progress file."""
         print("\n--- Your Progress So Far ---")
-        try:
-            with open(self.filename, "r") as file:
-                entries = json.load(file)
-                if not entries:
-                    print("No progress has been logged yet. Add your first entry!")
-                    return
-            
+        entries = self._read_entries()
+
+        if not entries:
+            print("No progress has been logged yet. Add your first entry!")
+        else:
             for entry in entries:
                 print(f"[{entry['timestamp']}] [{entry['category']}] {entry['log']}")
 
-        except (FileNotFoundError, json.JSONDecodeError):
-            print("No progress file found. Your first entry will create it.")
-
-    def run(self):
+    def run(self) -> None:
         """Displays the main menu and handles user choices."""
         print("Welcome to Progress Tracker!")
 
@@ -85,7 +89,7 @@ class ProgressTracker:
             else:
                 print("Invalid choice. Please enter a number between 1 and 3.")
 
-def main():
+def main() -> None:
     """Initializes the tracker and runs the application."""
     tracker = ProgressTracker("progress.json")
     tracker.run()
