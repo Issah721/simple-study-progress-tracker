@@ -32,15 +32,18 @@ python progress.py
 
 You will be presented with a menu to interact with the application:
 
-```
 Welcome to Progress Tracker!
 
 --- Menu ---
+
 1. Add a new progress entry
 2. View all progress
 3. Exit
 Enter your choice (1-3):
-```
+
+1.**Add a new progress entry**: Prompts you to enter a log message and a category for your new entry.
+2. **View all progress**: Displays all previously saved entries from `progress.json`.
+3. **Exit**: Closes the application.
 
 1. **Add a new progress entry**: Prompts you to enter a log message and a category for your new entry.
 2. **View all progress**: Displays all previously saved entries from `progress.json`.
