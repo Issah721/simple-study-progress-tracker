@@ -113,5 +113,10 @@
         "timestamp": "2025-10-06 21:31:10",
         "category": "Security",
         "log": "Installed and familiarized with gemini cli"
+    },
+    {
+        "timestamp": "2025-10-07 22:44:45",
+        "category": "Python",
+        "log": "Started learning DjangoRest Framework"
     }
 ]
