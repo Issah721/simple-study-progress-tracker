@@ -118,5 +118,10 @@
         "timestamp": "2025-10-07 22:44:45",
         "category": "Python",
         "log": "Started learning DjangoRest Framework"
+    },
+    {
+        "timestamp": "2025-10-09 13:56:26",
+        "category": "Python",
+        "log": "Learnt about djaongo, setting, creating an app, urls and views"
     }
 ]
