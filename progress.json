@@ -123,5 +123,10 @@
         "timestamp": "2025-10-09 13:56:26",
         "category": "Python",
         "log": "Learnt about djaongo, setting, creating an app, urls and views"
+    },
+    {
+        "timestamp": "2025-10-10 06:04:48",
+        "category": "Python",
+        "log": "Downloaded a customised ethical hacker vmware and set up my third personal homelab"
     }
 ]
