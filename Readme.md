@@ -7,6 +7,7 @@ This is a simple command-line application built with Python to help track person
 * **Add Entries**: Add new progress entries with a descriptive log and a category.
 * **Timestamping**: Each entry is automatically timestamped.
 * **View History**: View a complete, chronological history of all your logged progress.
+* **Streak Counter**: Tracks and displays your consecutive daily progress to keep you motivated.
 * **Simple Storage**: Data is stored in a clean, human-readable `progress.json` file.
 
 ## Prerequisites
@@ -17,33 +18,17 @@ The current version uses a `ProgressTracker` class to encapsulate the applicatio
 
 No special installation is required. Simply download or clone the `progress.py` script to a local directory.
 
-```bash
-git clone <your-repo-url>
-cd Progress101
-```
-
-## Usage
-
-Run the script from your terminal:
-
-```bash
-python progress.py
-```
-
-You will be presented with a menu to interact with the application:
+The application menu looks something like this:
 
 Welcome to Progress Tracker!
 
---- Menu ---
+Your current streak: 5 day(s) 🔥
 
-1. Add a new progress entry
+--- Menu ---
+1.Add a new progress entry
 2. View all progress
 3. Exit
 Enter your choice (1-3):
-
-1.**Add a new progress entry**: Prompts you to enter a log message and a category for your new entry.
-2. **View all progress**: Displays all previously saved entries from `progress.json`.
-3. **Exit**: Closes the application.
 
 1. **Add a new progress entry**: Prompts you to enter a log message and a category for your new entry.
 2. **View all progress**: Displays all previously saved entries from `progress.json`.

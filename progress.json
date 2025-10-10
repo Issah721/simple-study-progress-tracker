@@ -126,7 +126,12 @@
     },
     {
         "timestamp": "2025-10-10 06:04:48",
-        "category": "Python",
+        "category": "Security",
         "log": "Downloaded a customised ethical hacker vmware and set up my third personal homelab"
+    },
+    {
+        "timestamp": "2025-10-10 06:21:56",
+        "category": "Python",
+        "log": "Added a streak counter to my python code"
     }
 ]

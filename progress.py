@@ -1,5 +1,5 @@
 #This python program will track my progress
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 from typing import List, Dict, Any, Optional
 
@@ -68,11 +68,44 @@ class ProgressTracker:
             for entry in entries:
                 print(f"[{entry['timestamp']}] [{entry['category']}] {entry['log']}")
 
+    def calculate_streak(self) -> int:
+        """Calculates the current streak of consecutive days with entries."""
+        entries = self._read_entries()
+        if not entries:
+            return 0
+
+        # Get unique dates from entries, sorted in reverse chronological order
+        entry_dates = sorted(
+            list(
+                {datetime.strptime(e["timestamp"], "%Y-%m-%d %H:%M:%S").date() for e in entries}
+            ),
+            reverse=True
+        )
+
+        today = datetime.now().date()
+        
+        # If the last entry was before yesterday, the streak is broken.
+        if entry_dates[0] < today - timedelta(days=1):
+            return 0
+
+        streak = 0
+        # Start checking from today or yesterday, depending on the last entry date
+        expected_date = entry_dates[0]
+        for entry_date in entry_dates:
+            if entry_date == expected_date:
+                streak += 1
+                expected_date -= timedelta(days=1)
+            else:
+                break # The streak is broken
+        return streak
+
     def run(self) -> None:
         """Displays the main menu and handles user choices."""
         print("Welcome to Progress Tracker!")
 
         while True:
+            current_streak = self.calculate_streak()
+            print(f"\nYour current streak: {current_streak} day(s) 🔥")
             print("\n--- Menu ---")
             print("1. Add a new progress entry")
             print("2. View all progress")
