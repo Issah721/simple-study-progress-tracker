@@ -133,5 +133,15 @@
         "timestamp": "2025-10-10 06:21:56",
         "category": "Python",
         "log": "Added a streak counter to my python code"
+    },
+    {
+        "timestamp": "2025-10-11 21:26:14",
+        "category": "Security",
+        "log": "I completed module 2 of netacad Ethical Hacker Course, learnt about risk, contracts, scope, rules of engagemnt"
+    },
+    {
+        "timestamp": "2025-10-11 21:27:37",
+        "category": "Security",
+        "log": "Started module 3, learnt about passive and active recon, using spiderfoot and recon-ng for reconnaisance."
     }
 ]
