@@ -143,5 +143,10 @@
         "timestamp": "2025-10-11 21:27:37",
         "category": "Security",
         "log": "Started module 3, learnt about passive and active recon, using spiderfoot and recon-ng for reconnaisance."
+    },
+    {
+        "timestamp": "2025-10-12 21:11:09",
+        "category": "Python",
+        "log": "Learnt more about django; routes and templates."
     }
 ]
