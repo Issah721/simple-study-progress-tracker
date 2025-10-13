@@ -148,5 +148,10 @@
         "timestamp": "2025-10-12 21:11:09",
         "category": "Python",
         "log": "Learnt more about django; routes and templates."
+    },
+    {
+        "timestamp": "2025-10-13 12:17:09",
+        "category": "Security",
+        "log": "I learnt more on recon-ng and recon web, how to use, their use cases, installing and using various modules to do recon."
     }
 ]
