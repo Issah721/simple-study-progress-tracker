@@ -153,5 +153,10 @@
         "timestamp": "2025-10-13 12:17:09",
         "category": "Security",
         "log": "I learnt more on recon-ng and recon web, how to use, their use cases, installing and using various modules to do recon."
+    },
+    {
+        "timestamp": "2025-10-14 05:38:11",
+        "category": "Networking",
+        "log": "Started a networking course on netacad. I am currently in module 3.1.9 in Ethical hacking class on netacad."
     }
 ]
