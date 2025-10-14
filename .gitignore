@@ -1,0 +1,6 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+
+# Ignore user-specific data files
+progress.json
