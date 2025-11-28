@@ -1,26 +1,35 @@
 # Progress Tracker CLI
 
-This is a simple command-line application built with Python to help track personal progress. It was created as a practical project while learning Python, evolving from a basic script into an object-oriented program.
+This is a simple command-line application built with Python to help track personal progress. It has been upgraded with a beautiful interactive interface and new features to make tracking your learning journey even better.
 
 ## Features
 
-* **Add Entries**: Add new progress entries with a descriptive log and a category.
-* **Timestamping**: Each entry is automatically timestamped.
-* **View History**: View a complete, chronological history of all your logged progress.
-* **Simple Storage**: Data is stored in a clean, human-readable `progress.json` file.
+*   **Interactive Menu**: Navigate easily with a keyboard-friendly menu.
+*   **Rich Output**: View your progress in a beautifully formatted table with colors.
+*   **Streak Tracking**: Keep your momentum going by tracking your daily study streak.
+*   **Search**: Quickly find past entries by keyword.
+*   **Edit & Delete**: Fix mistakes or remove entries directly from the CLI.
+*   **XP System**: Earn XP for every entry you log!
+*   **Simple Storage**: Data is stored in a clean, human-readable `progress.json` file.
 
 ## Prerequisites
 
-This project started as a single Python script with a few functions to handle file I/O and user input. As my understanding of Python grew, I refactored the code to embrace Object-Oriented Programming (OOP) principles.
+*   Python 3.7+
+*   `rich`
+*   `questionary`
 
-The current version uses a `ProgressTracker` class to encapsulate the application's data (the filename) and its behavior (adding and viewing entries). This change has made the code more organized, reusable, and easier to extend with new features in the future.
+## Installation
 
-No special installation is required. Simply download or clone the `progress.py` script to a local directory.
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/Musau111/simple-study-progress-tracker.git
+    cd simple-study-progress-tracker
+    ```
 
-```bash
-git clone <your-repo-url>
-cd Progress101
-```
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Usage
 
@@ -30,24 +39,14 @@ Run the script from your terminal:
 python progress.py
 ```
 
-You will be presented with a menu to interact with the application:
+You will be presented with an interactive menu:
 
-Welcome to Progress Tracker!
-
---- Menu ---
-
-1. Add a new progress entry
-2. View all progress
-3. Exit
-Enter your choice (1-3):
-
-1.**Add a new progress entry**: Prompts you to enter a log message and a category for your new entry.
-2. **View all progress**: Displays all previously saved entries from `progress.json`.
-3. **Exit**: Closes the application.
-
-1. **Add a new progress entry**: Prompts you to enter a log message and a category for your new entry.
-2. **View all progress**: Displays all previously saved entries from `progress.json`.
-3. **Exit**: Closes the application.
+*   **Add Entry**: Log your progress for the day.
+*   **View Progress**: See your history, streak, and total XP.
+*   **Search**: Find specific entries.
+*   **Edit Entry**: Modify an existing log.
+*   **Delete Entry**: Remove an entry.
+*   **Exit**: Close the application.
 
 ## Data Format
 
@@ -57,6 +56,7 @@ Your progress is stored in `progress.json` as a list of entry objects. Each entr
 {
     "timestamp": "YYYY-MM-DD HH:MM:SS",
     "category": "YourCategory",
-    "log": "Your progress message."
+    "log": "Your progress message.",
+    "xp": 10
 }
 ```
